@@ -2,18 +2,11 @@
   "dependencies": [
     "../layout/template/browser.json",
     "./lib.js",
-    "./css/util.css",
-    "./css/main.css",
-    "./vendor/jquery/jquery-3.2.1.min.js",
-    "./vendor/bootstrap/css/bootstrap.min.css",
-    "./fonts/font-awesome-4.7.0/css/font-awesome.min.css",
-    "./vendor/animate/animate.css",
-    "./vendor/css-hamburgers/hamburgers.min.css",
-    "./vendor/animsition/css/animsition.min.css",
-    "./vendor/select2/select2.min.css",
-    "./vendor/daterangepicker/daterangepicker.css",
-    "./vendor/animsition/js/animsition.min.js",
-    "./vendor/bootstrap/js/popper.js"
-    
+    "./style.css",
+    {
+      "type": "js",
+      "url": "https://code.jquery.com/jquery-3.3.1.min.js"
+    },
+    "./datascience.jpg"
   ]
 }

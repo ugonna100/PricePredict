@@ -20,7 +20,7 @@ and open the template in the editor.
 }
 .mainBG {
     position: relative;
-    background: url("https://i.imgur.com/2wgDoXa.jpg");
+    background: url(datascience.jpg);
     background-size: cover;
     animation-name: intro;
     animation-duration: 2.0s;
@@ -231,7 +231,7 @@ table, th, td {
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
     overflow: hidden;
-    background-image: url(https://i.imgur.com/FkxOT8M.jpg);
+    background-image: url(homeBG3.jpg);
 }
 
 .topDash {

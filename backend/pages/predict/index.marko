@@ -1,0 +1,43 @@
+<lasso-page package-path="./browser.json"/>
+<include("../layout/template/index.marko", input)>
+  <@main>
+    <div class="container-fluid">
+      <div class="row" style="text-align: center; padding-top:10em;"/>
+      <div class="row">
+        <div class="col-sm-3" style="text-align: center"/>
+        <div class="col-sm-6" style="text-align: center">
+          <div class="form-box" style="color: black;">
+            <div class="form-top">
+              <div class="left">
+                <h3 style="padding-bottom: 15px;">Item info</h3>
+                <p>Enter your item details</p>
+              </div>
+              <div class="right" style="margin-top: 10px;">
+                <i class="fa fa-lock"/>
+              </div>
+            </div>
+            <div class="form-bottom">
+              <form>
+                <div class="form-group">
+                  <label class="sr-only" for="form-username">Item Name</label>
+                  <input type="text" name="itemname" placeholder="Item name..." class="form-username form-control input-lg" id="name"/>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-email">Description</label>
+                  <input type="text" name="description" placeholder="Description..." class="form-username form-control input-lg" id="data"/>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-password">Price</label>
+                  <input type="text" name="Price" placeholder="What Price do you think it is?" class="form-password form-control input-lg" id="form-password"/>
+                </div>
+                <button type="submit" class="btn buttonColor" value="Submit" id="rsubmit" onclick="post()">Register</button>
+              </form>
+            </div>
+          </div>
+          <p class="vgfont mysterious" style="color: white; padding-top: 15px;">Powered by Adaboost!</p>
+        </div>
+        <div class="col-sm-3" style="text-align: center"/>
+      </div>
+    </div>
+  </@main>
+</include>
