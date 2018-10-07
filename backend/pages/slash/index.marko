@@ -1,12 +1,32 @@
 <lasso-page package-path="./browser.json"/>
 <include("../layout/template/index.marko", input)>
-              <@main>
-                  <h1> Type in the Description of the item: </h1>
-                  <div>
-                  <textarea id="data">Here is some dummy text data</textarea>
-                  <h2> Type in the name of the item: </h2>
-                  <textarea id="name">Cheese</textarea>
-                  </div>
-                  <button type="button" onclick="post()"> POST TO SERVER </button>
-          </@main>
-          </include>
+  <@main>
+    <div class="container-contact100">
+      <div class="wrap-contact100">
+        <form class="contact100-form validate-form">
+          <span class="contact100-form-title">Price Predict</span>
+          <div class="wrap-input100 validate-input" data-validate="Name is required">
+            <span class="label-input100">Item Name</span>
+            <input class="input100" type="text" id="name" placeholder="Enter item name"/>
+            <span class="focus-input100"/>
+          </div>
+          <div class="wrap-input100 validate-input" data-validate="Description is required">
+            <span class="label-input100">Description</span>
+            <textarea class="input100" id="message" placeholder="Your description here..."/>
+            <span class="focus-input100"/>
+          </div>
+          <div class="container-contact100-form-btn">
+            <div class="wrap-contact100-form-btn">
+              <div class="contact100-form-bgbtn"/>
+              <button class="contact100-form-btn" onclick="post()">
+                <span>
+                  Submit <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"/>
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </@main>
+</include>

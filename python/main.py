@@ -11,8 +11,8 @@ CORS(app)
 def decision():
     content = request.form.get("desc")
     if content is not "":
-        #resultPrice = pricePrediction(content)
-        resultPrice = 32
+        resultPrice = pricePrediction(content)
+        #resultPrice = 32
         resultSend = {'price': resultPrice}
         return jsonify(resultSend)
     else:

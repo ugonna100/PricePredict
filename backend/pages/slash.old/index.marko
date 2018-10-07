@@ -1,0 +1,12 @@
+<lasso-page package-path="./browser.json"/>
+<include("../layout/template/index.marko", input)>
+              <@main>
+                  <h1> Type in the Description of the item: </h1>
+                  <div>
+                  <textarea id="data">Here is some dummy text data</textarea>
+                  <h2> Type in the name of the item: </h2>
+                  <textarea id="name">Cheese</textarea>
+                  </div>
+                  <button type="button" onclick="post()"> POST TO SERVER </button>
+          </@main>
+          </include>

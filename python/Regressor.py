@@ -73,5 +73,5 @@ def predict(text):
     
     print(value)
     #print(model.predict([value[0:22]]))
-    return model.predict([value[0:22]])
+    return model.predict([value[0:22]])[0]
 #predict()

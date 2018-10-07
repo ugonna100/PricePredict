@@ -1,0 +1,11 @@
+{
+  "dependencies": [
+    "../layout/template/browser.json",
+    "./lib.js",
+    "./style.css",
+    {
+      "type": "js",
+      "url": "https://code.jquery.com/jquery-3.3.1.min.js"
+    }
+  ]
+}
