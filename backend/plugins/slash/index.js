@@ -6,9 +6,10 @@ module.exports = function (fastify, opts, next) {
     });
     fastify.post('/:data', (req, reply) => {
         let payload = JSON.parse(req.params.data);
+        let desc = payload.description;
         const path = require('path');
         const priceAnalysis = require(path.resolve('lib/priceAnalysis.js'));
-        priceAnalysis(payload)
+        priceAnalysis(desc)
           .then((data) => {
             payload.price = data.price;
             reply.send(payload.price);
