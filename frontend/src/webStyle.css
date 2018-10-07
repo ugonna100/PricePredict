@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+#img-fluid {
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size:100% 500px; 
+}
+body {	
+	font-family: 'Mali', cursive;
+    color: Green;
+    background-color: #fefefe;
+    margin-top: 1.0em;
+}
+
+h1, h2, h3 {
+	margin-top: auto;
+    font-family: 'Mali', cursive;
+
+}
+
+a {
+    color: #7f8c8d;
+}
+
+img {
+    border-radius: 90%;
+    width: 50%;
+    height: auto;
+}
+
+#intro {
+    font-size: 8em;
+    height: auto;
+    text-decoration: underline;
+}
+
+#about {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+	font-size: 200%;
+	text-align: center;
+	margin-top: 2.0em;
+}
+
+p
+{
+ font-size: 150%;
+ text-align: center;
+
+}
+}
+
