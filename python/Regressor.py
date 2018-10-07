@@ -72,6 +72,6 @@ def predict(text):
         value.append(0)
     
     print(value)
-    #print(model.predict([value[0:22]]))
+    print('Price:',model.predict([value[0:22]]))
     return model.predict([value[0:22]])[0]
 #predict()
