@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Exo" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Test GAN</title>
+    </head>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 1.5em;">
+	      <div class="container-fluid font2">
+          <ul class="nav navbar-nav navbar-left">
+              <li><a href="#Home" style="margin-left: -10%;">Team Sudo</a></li>
+          </ul>
+          <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                  <img class="logo" id="navBarIcon" style="margin-left: -50%;" src="connect-icon.png">
+              </a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#About">About</a></li>
+              <li style="padding-right:10px;">
+                  <a href="main.html"><i class="fa fa-sign-in"></i></a>
+              </li>
+          </ul>
+       </div>
+    </nav>
+    <body class="register font2" style="color: white">
+        <div class="container-fluid">
+            <div class="row" style="text-align: center; padding-top:10em;">
+            </div>
+            <div class="row">
+              <div class="col-sm-3" style="text-align: center">
+              </div>
+                <div class="col-sm-6" style="text-align: center">
+                    <div class="form-box" style="color: black;">
+                        <div class="form-top">
+                            <div class="left">
+                                <h3 style="padding-bottom: 15px;">Item info</h3>
+                                <p>Enter your item details</p>
+                            </div>
+                            <div class="right" style="margin-top: 10px;">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <form>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-username">Item Name</label>
+                                    <input type="text" name="itemname" placeholder="Item name..." class="form-username form-control input-lg" id="form-username">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-email">Description</label>
+                                    <input type="text" name="description" placeholder="Description..." class="form-username form-control input-lg" id="form-email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-password">Price</label>
+                                    <input type="text" name="Price" placeholder="What Price do you think it is?" class="form-password form-control input-lg" id="form-password">
+                                </div>
+                                <button type="submit" class="btn buttonColor" value="Submit" id="rsubmit">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                    <p class="vgfont mysterious" style="color: white; padding-top: 15px;"> Powered by Adaboost! </p>
+                </div>
+                <div class="col-sm-3" style="text-align: center">
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="./js/javascript.js"></script>
+        <script>
+          $("#rsubmit").click(function() {
+            gan();
+            alert("Testing...")
+          });
+        </script>
+    </body>
+</html>
